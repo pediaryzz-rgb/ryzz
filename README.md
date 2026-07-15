@@ -1,0 +1,2 @@
+# ryzz
+ryzz pedia
