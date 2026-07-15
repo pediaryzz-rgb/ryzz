@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryzz Home SMM - Premium Social Media Marketing Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="auth-mode"> <div class="auth-container" id="authPage">
+    <div class="auth-card">
+      <div class="auth-header">
+        <i class="fa-solid fa-rocket brand-glow-icon"></i>
+        <h1>Ryzz Home SMM</h1>
+        <p>Masuk untuk mengelola dan optimasi sosial media Anda</p>
+      </div>
+      
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="loginUser"><i class="fa-solid fa-user"></i> Username</label>
+          <input type="text" id="loginUser" placeholder="Masukkan username" value="ryzzmember" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPass"><i class="fa-solid fa-lock"></i> Password</label>
+          <input type="password" id="loginPass" placeholder="Masukkan password" value="password123" required>
+        </div>
+        <div class="auth-actions">
+          <label class="remember-me">
+            <input type="checkbox" checked> Ingat Saya
+          </label>
+          <a href="#" class="forgot-pass">Lupa Password?</a>
+        </div>
+        <button type="submit" class="btn-submit auth-btn">
+          Masuk Sekarang <i class="fa-solid fa-right-to-bracket"></i>
+        </button>
+      </form>
+      <div class="auth-footer">
+        <p>Belum punya akun? <a href="#">Daftar Sekarang</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="app-layout hidden" id="appArea">
+    
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <i class="fa-solid fa-rocket brand-icon"></i>
+        <h2>Ryzz Home</h2>
+      </div>
+      
+      <nav class="sidebar-menu">
+        <a href="#" class="menu-link active" data-target="dashboard-section"><i class="fa-solid fa-house"></i> Dashboard</a>
+        <a href="#" class="menu-link" data-target="order-section"><i class="fa-solid fa-cart-plus"></i> Pemesanan Baru</a>
+        <a href="#" class="menu-link" data-target="history-section"><i class="fa-solid fa-history"></i> Riwayat Pesanan</a>
+        <a href="#" class="menu-link" data-target="deposit-section"><i class="fa-solid fa-wallet"></i> Isi Saldo / Deposit</a>
+        <a href="#" class="menu-link" data-target="services-section"><i class="fa-solid fa-list"></i> Daftar Layanan</a>
+        <a href="#" class="menu-link" data-target="api-section"><i class="fa-solid fa-code"></i> Dokumentasi API</a>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <p>Masuk sebagai:</p>
+        <strong id="loggedUser">ryzzmember</strong>
+        <button class="btn-logout" id="logoutBtn">
+          <i class="fa-solid fa-right-from-bracket"></i> Keluar
+  </button>
+  
