@@ -1,0 +1,71 @@
+:root {
+  --bg-main: #0b1329;
+  --bg-sidebar: #111a36;
+  --bg-card: #1c2541;
+  --bg-input: #0b1329;
+  
+  --primary: #5c67f2;
+  --primary-glow: rgba(92, 103, 242, 0.4);
+  --primary-hover: #4a54d4;
+  
+  --accent: #00f2fe;
+  --text-main: #f4f6fa;
+  --text-muted: #8b9bb4;
+  
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body.auth-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1c2541 0%, #0b1329 100%);
+}
+
+/* AUTHENTICATION / LOGIN CARD STYLE */
+.auth-container {
+  width: 100%;
+  max-width: 440px;
+  padding: 20px;
+}
+
+.auth-card {
+  background-color: var(--bg-sidebar);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.brand-glow-icon {
+  font-size: 3rem;
+  color: var(--accent);
+  text-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
+  margin-bottom: 12px;
+}
+
+.auth-header h1 {
+  font-size: 1.8rem;
+  
